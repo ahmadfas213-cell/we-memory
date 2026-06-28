@@ -1,0 +1,200 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Inter",sans-serif;
+    background:#fff7fa;
+    overflow-x:hidden;
+    color:#444;
+}
+
+.background{
+    position:fixed;
+    inset:0;
+    background:linear-gradient(135deg,#fff8fb,#ffe8ef,#ffdce8);
+    z-index:-2;
+}
+
+.blob{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(100px);
+    opacity:.45;
+}
+
+.one{
+    width:430px;
+    height:430px;
+    background:#ffc8d6;
+    left:-120px;
+    top:-120px;
+}
+
+.two{
+    width:350px;
+    height:350px;
+    background:white;
+    right:-120px;
+    bottom:-120px;
+}
+
+.hero{
+    text-align:center;
+    padding:70px 20px 40px;
+}
+
+.hero span{
+    letter-spacing:5px;
+    color:#d46f8c;
+}
+
+.hero h1{
+    font-size:70px;
+    margin:20px 0;
+    font-family:"Cormorant Garamond",serif;
+}
+
+.hero p{
+    color:#666;
+    line-height:1.9;
+}
+.letterSection{
+
+    display:flex;
+
+    justify-content:center;
+
+    padding:70px 20px;
+
+}
+
+.paper{
+
+    width:min(700px,92%);
+
+    min-height:650px;
+
+    background:white;
+
+    border-radius:28px;
+
+    padding:70px;
+
+    position:relative;
+
+    box-shadow:0 30px 80px rgba(0,0,0,.08);
+
+    opacity:0;
+
+    transform:translateY(80px);
+
+}
+
+.pin{
+
+    width:18px;
+
+    height:18px;
+
+    background:#f3a7bb;
+
+    border-radius:50%;
+
+    position:absolute;
+
+    top:28px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+}
+
+#letterText{
+
+    font-size:19px;
+
+    line-height:2.2;
+
+    color:#555;
+
+    white-space:pre-line;
+
+}
+
+.next{
+
+    padding:40px 0 90px;
+
+}
+
+#letterText{
+    color:#666;
+    line-height:2;
+    white-space:pre-line;
+}
+
+.next{
+    display:flex;
+    justify-content:center;
+    padding:70px 0 100px;
+}
+
+#nextLetter{
+    border:none;
+    padding:18px 50px;
+    border-radius:999px;
+    background:#f4a9bc;
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#nextLetter:hover{
+    transform:translateY(-5px);
+}
+@media (max-width:768px){
+
+    h1{
+        font-size:42px !important;
+    }
+
+    h2{
+        font-size:28px !important;
+    }
+
+    p{
+        font-size:16px !important;
+        line-height:1.8;
+    }
+
+    button{
+
+        width:90%;
+
+        max-width:320px;
+
+        padding:16px;
+
+        font-size:16px;
+
+    }
+
+    .paper{
+
+        width:92%;
+
+        padding:35px 22px;
+
+    }
+
+    .hero{
+
+        padding:50px 20px;
+
+    }
+
+}
